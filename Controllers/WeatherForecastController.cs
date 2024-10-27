@@ -30,7 +30,7 @@ namespace GitTestApi.Controllers
             .ToArray();
         }
 
-        [HttpGet(Name = "GetWeatherForecast2")]
+        [HttpGet("SecondWeather")]
         public IEnumerable<WeatherForecast> Get2()
         {
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
